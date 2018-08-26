@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tic Tac Toe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="main.js"></script>
 </head>
 <body>
+    <!-- <canvas id = "canvas1"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(1)"></canvas> -->
+    <div class="row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#f00" onclick="canvasClicked(1)"> <!-- An X -->
+            <polygon points="0,4 4,0 50,46 46,50" />
+            <polygon points="50,4 4,50 0,46 46,0" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" stroke="#090" stroke-width="5" fill="none"> <!-- An O -->
+            <circle cx="25" cy="25" r="22" />
+        </svg>
+        <img class="field" />
+    </div>
+    <div class="row">
+        <img class="field" src="img/x.svg"/>
+        <img class="field" />
+        <img class="field" />
+    </div>
+    <div class="row">
+        <img class="field" />
+        <img class="field" />
+        <img class="field" />
+    </div>
     
 </body>
 </html>
